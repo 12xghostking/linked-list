@@ -147,27 +147,5 @@ void remcy(node* &head){
 }
     int main(){
 node* head=NULL;
-attail(head,3);
-athead(head,6);
-athead(head,8);
-attail(head,5);
-attail(head,7);
-attail(head,9);
-attail(head,13);
-cycleat(head,4);
 
-remcy(head);
-cout<<endl;
-if(ccycle(head)==false)
-cout<<"0"<<endl;
-else
-cout<<"1"<<endl;
- /*node* revhead=rev(head);
-di(revhead);
-cout<<endl;
-node* revreh=revrec(head);
-di(revreh);
-node* revkk=revk(head,2);
-di(revkk);*/
-di(head);
 }
