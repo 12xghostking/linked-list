@@ -145,7 +145,4 @@ void remcy(node* &head){
     }
     slow->next=NULL;  
 }
-    int main(){
-node* head=NULL;
-
-}
+    
