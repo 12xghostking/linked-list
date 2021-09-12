@@ -145,4 +145,44 @@ void remcy(node* &head){
     }
     slow->next=NULL;  
 }
-    
+int length(node* head){
+    int l=0;
+    node* temp=head;
+    while (temp!=NULL)
+    {
+        l++;
+        temp=temp->next;
+}return l;
+}
+ node* appk(node* &head,int k){
+node* newhead;
+node* newtail;
+node* tail=head;
+int l=length(head);
+k=k%l;
+int c=1;
+while(tail->next!=NULL){
+    if(c==l-k){
+        newtail=tail;
+}if(c==l-k+1)
+newhead=tail;
+tail=tail->next;
+c++;
+}
+newtail->next=NULL;
+tail->next=head;
+return newhead;
+ }
+ void intersect(node* &head1,node* &head2,int pos){
+     node* temp1=head1;
+     pos--;
+     while(pos--){
+         temp1=temp1->next;
+
+     }
+     node* temp2=head2;
+     while(temp2->next!=NULL){
+         temp2=temp2->next;
+     }
+    temp2->next=temp1;
+ }
