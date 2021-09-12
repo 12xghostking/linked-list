@@ -25,3 +25,8 @@ ccycle(node pointer)=checks for a cycle in a linked list.
 
 remcy(node pointer)=removes cycle if present in  a linked list.
 
+length(node pointer)=return length of linkedlist
+
+appk(node pointer,integer)==appends last k of linked list to the front.
+
+intersect(node pointer 1,node pointer 2,position)=makes the second linked list intersect linked list1 at position 
